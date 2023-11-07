@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@font-face {
+	/* CSS에 추가(IE에서는 동작하지 않음.) */
+	font-family: "n";
+	src: url(nanum.ttf);
+}
+
+#mainForm table{
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#mainTable{
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#id{
+	
+	margin-left: 93px;
+	
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 페이지!</title>
+<link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+	<!-- 
+		회원가입
+		ID
+		PW
+		성별(하나선택)
+		지역
+			<select>
+				<option>서울</option>
+				<option>서울</option>
+			</select>
+		취미(복수 선택)
+		자기소개 <textarea>
+		가입 버튼을 누르면 > 내가 입력한 정보들이 새로운 페이지에서 출력되게끔!
+	 -->
+	<form id="mainForm" action="Output" method="post">
+		<table id="mainTable" border="1">
+			<tr align="center">
+				<td>회원 가입</td>
+			</tr>
+			<tr>
+				<td>ID<input name="id" id="id"
+					placeholder="필수, 4~8자"></td>
+			</tr>
+			<tr>
+				<td>PASSWORD <input type="password" name="password"
+					placeholder="필수, 영문/숫자 혼합"></td>
+			</tr>
+			<tr align="center">
+				<td>남성<input type="radio" name="gender" value="남성"
+					checked="checked"> 여성 <input type="radio" name="gender"
+					value="여성"></td>
+			</tr>
+			<tr align="center">
+				<td><select name="location"><option value="서울">서울</option>
+						<option value="인천">인천</option>
+						<option value="경기">경기</option>
+						<option value="부산">부산</option>
+						<option value="제주">제주</option>
+
+				</select></td>
+			</tr>
+			<tr align="center">
+				<td><input type="checkbox" name="check" value="게임">게임 <input
+					type="checkbox" name="check" value="음악감상">음악감상 <input
+					type="checkbox" name="check" value="독서">독서 <input
+					type="checkbox" name="check" value="수면">수면</td>
+			</tr>
+			<tr>
+				<td><textarea id="produce" name="produce" cols="35" rows="3">자기 소개글을 입력해주세요</textarea>
+				</td>
+			</tr>
+			<tr align="center">
+				<td><input type="submit" value="작성완료"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

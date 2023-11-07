@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="Output">
+		<table>
+			<tr>
+				<td>이름을 입력하세요<br><input name="name">
+				<button>입력</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+		<form action="Output" method="post"> <!-- a 태그는 post방식 요청 불가능 -->
+		<table>
+			<tr>
+				<td>이름을 입력하세요<br><input name="name2">
+				<button>입력</button><p>
+				<input type="submit" value="이게 기본이야."><p>
+				<input type="reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<!-- form 속에 있는
+			원래 : <input type="submit">을 누르면 action 속에 언급한 쪽으로 넘김(요청)
+			바뀜 : 버튼 모양인거 아무거나 눌러도 action쪽에 언급한 쪽으로 넘김(요청)
+				<input type="reset">만 빼고!
+			 -->
+</body>
+</html>
